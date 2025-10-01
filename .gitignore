@@ -1,0 +1,86 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata/
+
+# Xcode User Settings
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Build
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+*.swiftpm
+.swiftpm/
+
+# CocoaPods (if used)
+Pods/
+*.podspec
+Podfile.lock
+
+# Carthage (if used)
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Provisioning Profiles
+*.mobileprovision
+*.provisionprofile
+
+# Code coverage
+*.gcda
+*.gcno
+*.profdata
+*.coverage
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift compiler
+*.swiftdoc
+*.swiftmodule
+*.swiftsourceinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# Apple artifacts
+Breakpoints_v2.xcbkptlist
