@@ -14,7 +14,7 @@ Coordinate multi-agent tasks and route work to appropriate specialized agents ba
 - Swift version: 6+
 - Dependency manager: Swift Package Manager
 - Testing framework: XCTest
-- Available agents: frontend, backend, cloud, sensors, healthkit, coreml, vision, speech, avfoundation, haptics, foundationmodels
+- Available agents: frontend, backend, cloud, sensors, healthkit, homekit, weatherkit, coreml, vision, speech, avfoundation, haptics, foundationmodels
 
 ## Constraints
 - follow TDD principles
@@ -84,6 +84,24 @@ Coordinate multi-agent tasks and route work to appropriate specialized agents ba
 - Clinical records (FHIR)
 - HealthKit permissions and authorization
 - CareKit and ResearchKit integration
+
+### HomeKit Agent
+- Smart home accessory control and management
+- Scenes and automation (time, event, location triggers)
+- HomeKit Secure Video and camera integration
+- Matter and Thread protocol support
+- Home hub coordination
+- Accessory pairing and discovery
+- User roles and home sharing
+
+### WeatherKit Agent
+- Weather data queries and forecasting
+- Current conditions and hourly/daily forecasts
+- Severe weather alerts and warnings
+- Minute-by-minute precipitation forecasts
+- Location-based weather requests
+- Weather data caching and API optimization
+- Attribution and credential management
 
 ### CoreML Agent
 - Core ML model integration and optimization

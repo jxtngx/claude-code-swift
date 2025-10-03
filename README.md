@@ -8,9 +8,9 @@ This repository provides a multi-agent AI system and comprehensive user story te
 
 - **Privacy-First Architecture**: On-device processing with no cloud dependencies
 - **Test-Driven Development**: >85% test coverage goal
-- **Multi-Agent Collaboration**: 12 specialized AI agents for different iOS frameworks
-- **Ready-to-Use Templates**: 28 platform-specific user stories following INVEST + FCPRG principles
-- **Apple Platform Expertise**: iPhone, iPad, Apple Watch, and Vision Pro
+- **Multi-Agent Collaboration**: 14 specialized AI agents for different Apple frameworks
+- **Ready-to-Use Templates**: 35 platform-specific user stories following INVEST + FCPRG principles
+- **Apple Platform Expertise**: iPhone, iPad, Apple Watch, Vision Pro, and macOS
 
 ## Prerequisites
 
@@ -69,6 +69,7 @@ Create a new Xcode project for your target platform:
 - **iOS App**: File → New → Project → iOS → App
 - **watchOS App**: File → New → Project → watchOS → App
 - **visionOS App**: File → New → Project → visionOS → App
+- **macOS App**: File → New → Project → macOS → App
 
 Choose SwiftUI as the interface and Swift as the language.
 
@@ -81,7 +82,8 @@ prompt-templates/
 ├── iphone/          # 7 iPhone app templates
 ├── ipad/            # 7 iPad app templates
 ├── apple-watch/     # 7 Apple Watch app templates
-└── vision-pro/      # 7 Vision Pro app templates
+├── vision-pro/      # 7 Vision Pro app templates
+└── macos/           # 7 macOS app templates
 ```
 
 ### 5. Submit Template to Claude Code
@@ -105,13 +107,15 @@ Follow the AI-generated implementation:
 ```
 claude-code-swift/
 ├── .claude/
-│   └── agents/              # 12 specialized AI agents
+│   └── agents/              # 14 specialized AI agents
 │       ├── supervisor.md    # Task router and coordinator
 │       ├── frontend.md      # SwiftUI interface specialist
 │       ├── backend.md       # Networking and persistence
 │       ├── cloud.md         # AWS integration (when needed)
 │       ├── sensors.md       # Motion, location, biometric sensors
 │       ├── healthkit.md     # Health and fitness data
+│       ├── homekit.md       # Smart home device control
+│       ├── weatherkit.md    # Weather data and forecasting
 │       ├── coreml.md        # Machine learning models
 │       ├── vision.md        # Computer vision
 │       ├── speech.md        # Speech recognition and synthesis
@@ -122,14 +126,15 @@ claude-code-swift/
 │   ├── iphone/
 │   ├── ipad/
 │   ├── apple-watch/
-│   └── vision-pro/
+│   ├── vision-pro/
+│   └── macos/
 ├── CLAUDE.md                # Root agent instructions
 └── README.md                # This file
 ```
 
 ## Available AI Agents
 
-The project includes 12 specialized agents, each expert in specific Apple frameworks:
+The project includes 14 specialized agents, each expert in specific Apple frameworks:
 
 | Agent | Expertise |
 |-------|-----------|
@@ -139,6 +144,8 @@ The project includes 12 specialized agents, each expert in specific Apple framew
 | **Cloud** | AWS services (Lambda, S3, DynamoDB) when explicitly required |
 | **Sensors** | CoreMotion, CoreLocation, SensorKit, biometric sensors |
 | **HealthKit** | Health data management, workouts, clinical records |
+| **HomeKit** | Smart home accessories, automation, HomeKit Secure Video, Matter |
+| **WeatherKit** | Weather forecasts, alerts, current conditions, precipitation data |
 | **CoreML** | ML model integration, Create ML, Neural Engine optimization |
 | **Vision** | Image analysis, object detection, OCR |
 | **Speech** | Speech recognition and synthesis |
@@ -185,6 +192,15 @@ See [`.claude/agents/supervisor.md`](.claude/agents/supervisor.md) for detailed 
 - **Spatial Photo Album** - PhotoKit, 3D layouts
 - **Virtual Piano** - Hand tracking, audio synthesis
 - **Mindfulness Space** - Customizable environments, HealthKit
+
+### macOS (7 Templates)
+- **Menu Bar System Monitor** - AppKit, IOKit, CPU/memory/network tracking
+- **Markdown Note Editor** - AppKit, WebKit, live preview, local files
+- **Screen Time Analyzer** - Accessibility APIs, app usage tracking
+- **Clipboard History Manager** - NSPasteboard, search, encryption
+- **Focus Mode Timer** - Pomodoro, Do Not Disturb, app blocking
+- **File Organization Assistant** - FileManager, Vision OCR, smart sorting
+- **Voice Command Automator** - Speech, AppleScript, hands-free control
 
 All templates follow **INVEST** (Independent, Negotiable, Valuable, Estimable, Small, Testable) and **FCPRG** (Facts, Constraints, Penalties, Rewards, Goal State) principles.
 
