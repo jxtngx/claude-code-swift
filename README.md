@@ -322,6 +322,4 @@ Here's a typical workflow using the **Fitness Activity Tracker** template:
 
 ---
 
-**Repository**: [github.com/jxtngx/claude-code-swift](https://github.com/jxtngx/claude-code-swift)
-
-**Built with**: Claude Code + Swift 6 + SwiftUI + ❤️
+**Built with**: Claude Code
